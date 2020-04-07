@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ивашин & Тарасенко</title>	
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+	<link rel="stylesheet" href="mystyle.css" type="text/css" >
+	<script>
+		function getAddress() {
+			var request;
+			if (window.XMLHttpRequest) {
+				request=new XMLHttpRequest ();
+			} else {
+				request=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			request.onreadystatechange = function () {
+				if (request.readyState==4 && request.status==200) {
+					document.getElementById("address").value=request.responseText;
+				}
+			};
+			var phone=document.getElementById("phone").value;
+			request.open("POST", "pizza.jsp?phone="+phone, true);
+			request.send();
+		}
+	</script>
+</head>
+<body>
+	<div id="los">
+	<form action="pizza.jsp" method="get">
+		<h1>Заказ пиццы</h1>
+		<p id="phone1">Телефон:</p><input type="text" id="phone" name="phone" onchange="getAddress()"/><br>
+		<p id="box">Заказ:</p><textarea id="order" rows="5" name="order"></textarea><br>
+		<p id="id">Адрес:</p><textarea rows="5" id="address" name="address"></textarea><br>
+		<p id="cnock"><input type="submit" value="Заказать"></p>
+	</form>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    position: relative;
+    width: 461px;
+    height: 738px;
+
+    background: #8C5320;
+}
+
+h1 {
+    position: absolute;
+    width: 156px;
+    height: 43px;
+    left: 223px;
+    top: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+#phone1 {
+    position: absolute;
+    width: 223px;
+    height: 75px;
+    left: 0px;
+    top: 98px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+#phone {
+    position: absolute;
+    width: 255px;
+    height: 66px;
+    left: 200px;
+    top: 77px;
+
+    background: rgba(235, 230, 230, 0.31);
+}
+
+#box {
+    position: absolute;
+    width: 126px;
+    height: 33px;
+    left: 0px;
+    top: 208px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+#order {
+    position: absolute;
+    width: 255px;
+    height: 217px;
+    left: 200px;
+    top: 187px;
+
+    background: rgba(235, 230, 230, 0.31);
+}
+
+#id {
+    position: absolute;
+    width: 191px;
+    height: 33px;
+    left: 0px;
+    top: 469px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+#address {
+    position: absolute;
+    width: 255px;
+    height: 147px;
+    left: 200px;
+    top: 448px;
+
+    background: rgba(235, 230, 230, 0.29);
+}
+
+input {
+    position: absolute;
+    width: 255px;
+    height: 72px;
+    left: 200px;
+    top: 639px;
+
+    background: #133A24;
+}
